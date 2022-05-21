@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+		<title>Face Recognition</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-cloud"></span>
+					<h1>Hello!! <br> Welcome to <strong>Face Recognition</strong> Attendance System. <br>
+					 </h1>
+					<h4>
+						For Engineering Colleges
+					</h4>
+
+					<ul class="actions special">
+						<li><a href="{{ url_for('login') }}" class="button scrolly">Login</a></li>
+					</ul>
+				</div>
+			</section>
+
+
+		<!-- One -->
+
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Face Recognition Attendance System
+								</h2>
+							</header>
+							<p>
+								It can be very tedious for a teacher to take attendance in every class, not to mention how time consuming it is. A simple solution for this would be a smart face recognition based attendance system, which would recognise the faces of the students in the class for determining attendance of students, allowing teachers to spend more time on teaching.
+                                <br>
+
+
+
+							</p>
+
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="static/images/pic01.jpg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+<!-- Footer -->
+
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; </li><li>by Akanksha from <a href="https://www.rvce.edu.in/">RVCE</a></li>
+				</ul>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+
+	</body>
+</html>

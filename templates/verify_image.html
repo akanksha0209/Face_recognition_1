@@ -1,0 +1,90 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends 'base.html' %}
+
+{% block title %}Verify Your Image{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--	<head>-->
+<!--		<title>Verify Your Image</title>-->
+<!--		<meta charset="utf-8" />-->
+
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+<!--		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />-->
+<!--		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>-->
+
+
+
+
+<!--	</head>-->
+
+<!--<body>-->
+<!--<section id="header" style="height:10px">-->
+<!--				<div class="inner">-->
+<!--					<span class="icon solid major fa-cloud" style="top:-40px"></span>-->
+<!--				</div>-->
+<!--			</section>-->
+{% block content %}
+
+           <section id="one" class="main style1">
+				<div  class="container">
+
+							<header  class="major">
+								<h2 >
+									Verify Your Image
+
+								</h2>
+							</header>
+					        <div style="justify-content:centre; display:flex; margin-top:60px">
+									<img src="../static/images/Students_and_Teachers/{{ first_name }}%20{{ last_name }}.{{ person_id }}.jpg" width="50%" height="50%" align="centre">
+
+							 </div>
+					         <br>
+					         <br>
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+
+
+						{{ wtf.quick_form(verified_image_form) }}
+						</div>
+						<div class="col-6 col-12-medium">
+
+
+						{{ wtf.quick_form(retake_image_form) }}
+						</div>
+
+					</div>
+
+				</div>
+
+		   </section>
+
+
+{% endblock %}
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+
+<!--			<section id="footer">-->
+<!--				<ul class="icons">-->
+<!--					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>-->
+<!--					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+<!--					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
+<!--					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>-->
+<!--					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>-->
+<!--				</ul>-->
+<!--				<ul class="copyright">-->
+<!--					<li>&copy; </li><li>by Akanksha from <a href="https://www.rvce.edu.in/">RVCE</a></li>-->
+<!--				</ul>-->
+<!--			</section>-->
+
+
+<!--		&lt;!&ndash; Scripts &ndash;&gt;-->
+<!--			<script src="{{ url_for('static', filename='assets/js/browser.min.js')}}"></script>-->
+<!--			<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>-->
+<!--			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>-->
+<!--			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>-->
+<!--			<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>-->
+<!--			<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>-->
+
+<!--	</body>-->
+<!--</html>-->

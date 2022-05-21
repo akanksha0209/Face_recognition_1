@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Student Home{% endblock %}
+
+{% block content %}
+       <section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<a class="btn" href="{{ url_for('view_student_details') }}" style="float:left">View Student </br>Details</a>
+
+						<a class="btn" href="{{ url_for('login') }}" style="float:right">Logout</a>
+						<h2><strong>Student Home Page</strong></h2>
+
+
+					</header>
+                   <div class="row gtr-150">
+
+
+							<span class="image fit"><img src="static/images/pic04.jpg" alt="" /></span>
+							<h3>View My Previous Attendance</h3>
+
+							<ul class="actions special">
+								<li><a href="{{ url_for('view_my_attendance')}}" class="button" style="float:left">Click Here</a></li>
+							</ul>
+
+
+                   </div>
+                </div>
+       </section>
+{% endblock %}
