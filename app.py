@@ -522,7 +522,7 @@ def login():
     print(students)
 
     if login_form.validate_on_submit():
-        if login_form.username.data == 'a' and login_form.password.data == '1':
+        if login_form.username.data == 'admin_2022' and login_form.password.data == 'abcd1234':
 
             return render_template('home.html')
         else:
